@@ -111,12 +111,12 @@ textarea {
     color: #fff;
 }
 
-/* #c1,
+#c1,
 #c2,
 #c3 {
-    width: 18rem;
+    
     height: 250px;
-} */
+} 
 
 #proyectos {
     background-color: #a32633;
@@ -138,6 +138,9 @@ textarea {
     section#presentacion {
         padding-top: 110px;
     }
+    section#contacto {
+        margin-top: 100px;
+    }
 
 }
 
@@ -154,6 +157,9 @@ textarea {
         padding-top: 120px;
         padding-bottom: 140px;
     }
+    #contacto{
+        margin-top: 100px;
+    }
 }
 
 /* MD */
@@ -169,10 +175,7 @@ textarea {
         padding-bottom: 150px;
     }
 
-    #habilidades {
-        display: flex;
-        justify-content: space-around;
-    }
+    
 }
 
 /* LG */
@@ -183,6 +186,10 @@ textarea {
     section#contacto {
         min-height: 60vh;
     }
+    #habilidades {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 /* XL */
@@ -192,9 +199,5 @@ textarea {
     section#proyectos,
     section#contacto {
         min-height: 55vh;
-    }
-
-    textarea {
-        height: 239px;
     }
 }

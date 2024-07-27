@@ -85,14 +85,19 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row ">
                         <ul id="habilidades">
-                            <li><b>Habilidad 1</b></li>
-                            <li><b>Habilidad 2</b></li>
-                            <li><b>Habilidad 3</b></li>
-                            <li><b>Habilidad 4</b></li>
-                            <li><b>Habilidad 5</b></li>
-                            <li><b>Habilidad 6</b></li>
+                            <div class="col-lg-1">
+                                <li><b>Comunicación</b></li>
+                                <li><b>Perseverancia</b></li>
+                                <li><b>Responsable</b></li>
+                                
+                            </div>
+                            <div class="col-lg-1">
+                                <li><b>Autocritica</b></li>
+                                <li><b>Adaptación</b></li>
+                                <li><b>Manejo de recursos digitales</b></li>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -111,12 +116,13 @@
                                         <h4>Escríbenos y en breve nos contactaremos contigo</h4>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                             <div class="form-floating mb-3">
                                                 <input type="text" class="form-control" id="txt-nombre"
                                                     aria-describedby="nombre-help" placeholder="Nombre" maxlength="60">
                                                 <div id="nombre-help" class="form-text text-danger"></div>
-                                                <label id="lbl-nombre" for="txt-nombre" class="form-label">Nombre</label>
+                                                <label id="lbl-nombre" for="txt-nombre"
+                                                    class="form-label">Nombre</label>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input type="email" class="form-control" id="txt-email"
@@ -134,16 +140,17 @@
                                                     class="form-label">Telefono</label>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                             <div class="form-floating mb-3">
                                                 <textarea class="form-control" id="txt-mensaje"
                                                     aria-describedby="mensaje-help" placeholder="Mensaje"></textarea>
                                                 <div id="mensaje-help" class="form-text text-danger"></div>
-                                                <label id="lbl-mensaje" for="txt-mensaje" class="form-label">Mensaje</label>
+                                                <label id="lbl-mensaje" for="txt-mensaje"
+                                                    class="form-label">Mensaje</label>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <button type="submit" class="btn btn-primary">Ingresar</button>
                                     <button type="button" class="btn btn-warning" id="btn-limpiar">Limpiar</button>
                                 </form>

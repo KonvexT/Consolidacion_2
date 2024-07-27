@@ -1,0 +1,135 @@
+    section#nosotros,
+    section#servicios,
+    section#galeria,
+    section#contactanos {
+        min-height: 55vh;
+    }
+
+    * {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+
+    .navbar {
+        background-color: #181d54;
+        color: #fff;
+    }
+
+    /* .carousel-caption h5 {
+        color: black;
+    }
+    
+    .carousel-caption p {
+        color: black;
+    }
+    
+    .carousel-indicators button {
+        background-color: black !important;
+    } */
+
+    h2 {
+        padding-top: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+
+    #nosotros,
+    #galeria {
+        background-color: #b91548;
+        color: #fff;
+    }
+
+    footer {
+        background-color: #181d54;
+        color: #fff;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+        color: white !important;
+        text-shadow: #000 0.1em 0.1em 0.2em;
+
+    }
+
+    .carousel-indicators button {
+        color: white !important;
+    }
+
+    #carouselExampleCaptions {
+        padding-top: 14px;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    ul {
+        padding-inline-start: 0px !important;
+
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    @media screen and (min-width: 320px) {
+
+        section#nosotros,
+        section#servicios,
+        section#galeria,
+        section#contactanos {
+            min-height: 75vh;
+        }
+    }
+
+    /* SM */
+    @media screen and (min-width: 576px) {
+
+        section#nosotros,
+        section#servicios,
+        section#galeria,
+        section#contactanos {
+            min-height: 70vh;
+        }
+    }
+
+    /* MD */
+    @media screen and (min-width: 768px) {
+
+        section#nosotros,
+        section#servicios,
+        section#galeria,
+        section#contactanos {
+            min-height: 65vh;
+        }
+    }
+
+    /* LG */
+    @media screen and (min-width: 992px) {
+
+        section#nosotros,
+        section#servicios,
+        section#galeria,
+        section#contactanos {
+            min-height: 60vh;
+        }
+
+        textarea {
+            min-height: 210px;
+        }
+    }
+
+    /* XL */
+    @media screen and (min-width: 1200px) {
+
+        section#nosotros,
+        section#servicios,
+        section#galeria,
+        section#contactanos {
+            min-height: 55vh;
+        }
+
+        footer {
+            min-height: 20vh;
+        }
+    }

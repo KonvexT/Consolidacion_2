@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/stylesp2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Ejemplo sitio web</title>
+</head>
+
+<body data-bs-theme="light">
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top border-bottom" data-bs-theme="dark">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.jpg" alt="" height="60" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactanos">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn rounded-fill" onclick="cambiarTema()"><i id="d1-icon"
+                                    class="bi bi-moon-fill"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pt-5">
+            <div id="carouselExampleCaptions" class="carousel slide mt-4">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel/slide01.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Wireframes</h5>
+                            <p>
+                                Representamos la estructura y disposición de los elementos del
+                                Sitio o Aplicación Web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel/slide02.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Desarrollo</h5>
+                            <p>
+                                Utilizamos lenguaje de programación como HTML, CSS,
+                                JavaScript, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel/slide03.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tests</h5>
+                            <p>
+                                Verificamo el comportamiento y la funcionalidad del Sitio o
+                                Aplicación Web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="nosotros">
+            <div class="container">
+                <h2 class="pb-3">¡Creamos tu marca!</h2>
+                <article>
+                    <p>
+                        En <b>B Social</b> nos dedicamos a ofrecer soluciones de
+                        Desarrollo Web que impulsan el crecimiento y la presencia en línea
+                        de nuestros clientes. Con un enfoque en la innovación y la
+                        calidad, transformamos ideas en realidades digitales y atractivas.
+                    </p>
+                    <p>
+                        Nos comprometemos a mantenernos a la vanguardia de las últimas
+                        tecnologías y tendencias del mercado para asegurarnos de que cada
+                        proyecto supere las expectativas.
+                    </p>
+
+                    <p>
+                        En <b>B Social</b>, no solo creamos Sitios Web; creamos
+                        experiencias digitales memorables que establecen conexiones
+                        duraderas entre marcas y sus audiencias. <br /><br /><b>¡Convierte tu visión en realidad con
+                            nosotros!</b>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container" id="servicios">
+            <h2 class="pb-3">Lo que realizamos</h2>
+
+            <div class="row">
+                <div class="col-md-4 pb-5">
+                    <div class="card">
+                        <img src="assets/img/carousel/slide01.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño Sitios Web</h5>
+                            <p class="card-text">
+                                Creamos tu Sitio Web con las últimas tendencias del diseño,
+                                pero principalmente, te escuchamos para poder transmitir la
+                                esencía de tu negocio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-5">
+                    <div class="card">
+                        <img src="assets/img/carousel/slide02.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Digital</h5>
+                            <p class="card-text">
+                                Ofrecemos servicios de posicionamiento y campañas en Redes
+                                Sociales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-5">
+                    <div class="card">
+                        <img src="assets/img/carousel/slide03.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo de Apps Web</h5>
+                            <p class="card-text">
+                                ¿Quieres automatizar los procesos de tu Empresa?. Cuenta con
+                                nosotros para el Desarrollo de Sistemas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="galeria">
+            <div class="container">
+                <h2>Galería</h2>
+                <div class="d-flex justify-content-around pb-5">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center pt-5 text-center justify-content-center">
+                            <img src="assets/img/galeria/html5.png" alt="" />
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center pt-5 text-center justify-content-center">
+                            <img src="assets/img/galeria/css.png" alt="" />
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center pt-5 text-center justify-content-center">
+                            <img src="assets/img/galeria/js.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="contactanos">
+            <h2>Contáctanos</h2>
+
+            <div class="col-sm-8 offset-sm-2 mb-4">
+                <form class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group my-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="apellidop" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="apellidop" />
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="apellidom" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="apellidom" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group my-3">
+                            <label for="mensaje" class="form-label">Cuéntanos</label>
+                            <textarea class="form-control" id="mensaje" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="assets/img/logo-footer.png" alt="" height="180" />
+                </div>
+                <div class="col-md-4 align-items-center d-flex text-center justify-content-center">
+                    <ul>
+                        <li class="mb-4">B Social</li>
+                        <li class="mb-4">hola@besocial.cl</li>
+                        <li class="mb-4">Bootcamp Fullstack JavaScript</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 align-items-center d-flex text-center justify-content-center">
+                    <ul>
+                        <li class="mb-4">Preguntas Frecuentes</li>
+                        <li class="mb-4">Términos y Condiciones</li>
+                        <li class="mb-4">Política de Privacidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

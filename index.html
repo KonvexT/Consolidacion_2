@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <title>Consolidacion 2</title>
+</head>
+
+<body data-bs-theme="light">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo-navbar" src="assets/img/logonav.jpg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#presentacion">Presentacion</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                        <a class="nav-link" href="#contacto">Formulario</a>
+                        <button class="btn rounded-fill" onclick="cambiarTema()"><i id="d1-icon"
+                                class="bi bi-moon-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-fluid" id="presentacion">
+            <div class="container">
+                <h1>Informacion personal</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nisi id quae magnam, quam
+                    placeat
+                    mollitia atque commodi tenetur impedit, magni sunt cum rem eligendi repellat iure rerum. Sit,
+                    voluptatum!</p>
+            </div>
+        </section>
+        <section class="container-fluid" id="proyectos">
+            <div class="container">
+                <h1 id="pyh">Proyectos y habilidades</h1>
+                <div class="row justify-content-center d-flex">
+                    <div class="text-center col-md-6 col-lg-4 py-3 px-3">
+                        <div class="card" id="c1">
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Proyecto 1</h5>
+                                <p class="card-text">Este proyecto consistía en realizar la codificación de un
+                                    formulario básico de pacientes y lograr hacerlo responsivo</p>
+                                <a href="proyecto1.html" class="btn btn-primary">Ir a proyecto 1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center col-12 col-md-6 col-lg-4 py-3 px-3">
+                        <div class="card" id="c2">
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Proyecto 2</h5>
+                                <p class="card-text">Este proyecto consistía en crear una página responsiva y permitir
+                                    moverse a través de los diversos sections</p>
+                                <a href="proyecto2.html" class="btn btn-primary">Ir a proyecto 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center col-12 col-md-6 col-lg-4 py-3 px-3">
+                        <div class="card" id="c3">
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Proyecto 3</h5>
+                                <p class="card-text">Este proyecto consistía en crear una tabla que recibiera datos y
+                                    cambiara el color del salario dependiendo del monto</p>
+                                <a href="proyecto3.html" class="btn btn-primary">Ir a proyecto 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <ul id="habilidades">
+                            <li><b>Habilidad 1</b></li>
+                            <li><b>Habilidad 2</b></li>
+                            <li><b>Habilidad 3</b></li>
+                            <li><b>Habilidad 4</b></li>
+                            <li><b>Habilidad 5</b></li>
+                            <li><b>Habilidad 6</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="contacto">
+            <div class="container">
+                <h1>Contáctanos</h1>
+
+                <div class="d-flex justify-content-center pt-5">
+                    <div class="col-sm-8 col-lg-10 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="formulario">
+                                    <div class="form-label mb-3">
+                                        <h4>Escríbenos y en breve nos contactaremos contigo</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="txt-nombre"
+                                                    aria-describedby="nombre-help" placeholder="Nombre" maxlength="60">
+                                                <div id="nombre-help" class="form-text text-danger"></div>
+                                                <label id="lbl-nombre" for="txt-nombre" class="form-label">Nombre</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="txt-email"
+                                                    aria-describedby="email-help" placeholder="Correo electrónico"
+                                                    maxlength="80">
+                                                <div id="email-help" class="form-text text-danger"></div>
+                                                <label id="lbl-email" for="txt-email" class="form-label">Correo
+                                                    electrónico</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="txt-telefono"
+                                                    aria-describedby="telefono-help" placeholder="Telefono">
+                                                <div id="telefono-help" class="form-text text-danger"></div>
+                                                <label id="lbl-telefono" for="txt-telefono"
+                                                    class="form-label">Telefono</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <textarea class="form-control" id="txt-mensaje"
+                                                    aria-describedby="mensaje-help" placeholder="Mensaje"></textarea>
+                                                <div id="mensaje-help" class="form-text text-danger"></div>
+                                                <label id="lbl-mensaje" for="txt-mensaje" class="form-label">Mensaje</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                                    <button type="button" class="btn btn-warning" id="btn-limpiar">Limpiar</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div id="alert-send" class="alert alert-success mt-3 d-none" role="alert">
+                            Sus datos fueron enviados correctamente
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-copyright">
+            <div class="footer-copyright-content">
+                <span class="footer-copyright-text"> Copyright © 2024 Benjamin Marchant </span>
+                <div class="footer-copyright-links-wrap">
+                    <a class="footer-copyright-link" href="#">Términos y Condiciones</a>
+                    <span class="copyright-line"> | </span>
+                    <a class="footer-copyright-link" href="#">Seguridad y Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: fff;
+}
+
+.navbar {
+    background-color: #000000;
+    box-shadow: 0px 0px 20px rgb(141, 140, 140);
+}
+
+#logo-navbar {
+    height: 50px;
+    margin: -5px;
+    margin-left: 15px;
+}
+
+.card {
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#navbarNavAltMarkup {
+    justify-content: center;
+}
+
+section#presentacion,
+section#proyectos,
+section#contacto {
+    min-height: 55vh;
+}
+
+.footer-copyright {
+    padding: 16px 0;
+    margin: 0 auto;
+}
+
+.footer-copyright-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+.footer-copyright-text {
+    color: #fff;
+}
+
+.footer-copyright-links-wrap {
+    padding: 8px 16px;
+}
+
+.footer-copyright-link {
+    margin: 5px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-shadow: 0px 5px 20px gray;
+}
+
+.copyright-line {
+    color: #fff;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 0px 20px rgb(141, 140, 140);
+}
+
+#footerp3,
+#footerp1 {
+    position: fixed;
+    bottom: 0;
+}
+
+textarea {
+    height: 150px !important;
+}
+
+#p3,
+#p1 {
+    padding-top: 100px;
+}
+
+#tabla-colaborador {
+    margin-top: 20px;
+}
+
+#habilidades {
+    align-items: center;
+    color: #fff;
+}
+
+#pyh {
+    color: #fff;
+}
+
+/* #c1,
+#c2,
+#c3 {
+    width: 18rem;
+    height: 250px;
+} */
+
+#proyectos {
+    background-color: #a32633;
+    box-shadow: 0px 0px 20px rgb(141, 140, 140);
+}
+
+@media screen and (min-width: 320px) {
+
+    section#presentacion,
+    section#proyectos,
+    section#contacto {
+        min-height: 75vh;
+    }
+
+    section#proyectos {
+        padding-top: 100px;
+    }
+
+    section#presentacion {
+        padding-top: 110px;
+    }
+
+}
+
+/* SM */
+@media screen and (min-width: 576px) {
+
+    section#presentacion,
+    section#proyectos,
+    section#contacto {
+        min-height: 70vh;
+    }
+
+    section#contacto {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+
+    section#presentacion,
+    section#proyectos,
+    section#contacto {
+        min-height: 65vh;
+    }
+
+    section#contacto {
+        padding-bottom: 150px;
+    }
+
+    #habilidades {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+
+    section#presentacion,
+    section#proyectos,
+    section#contacto {
+        min-height: 60vh;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+
+    section#presentacion,
+    section#proyectos,
+    section#contacto {
+        min-height: 55vh;
+    }
+
+    textarea {
+        height: 239px;
+    }
+}

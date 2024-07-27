@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/stylesp1.css">
+    <title>Consolidacion 2</title>
+</head>
+
+<body data-bs-theme="light">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo-navbar" src="assets/img/logonav.jpg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#p1">Inicio</a>
+                        <a class="nav-link" href="index.html">Volver</a>
+                        <button class="btn rounded-fill" onclick="cambiarTema()"><i id="d1-icon"
+                                class="bi bi-moon-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="p1">
+            <h1>Formulario de Pacientes</h1>
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-rut">RUT</label>
+                        <input type="text" id="txt-rut" name="rut">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-primer-nombre">Primer Nombre</label>
+                        <input type="text" id="txt-primer-nombre" name="primer_nombre">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="contenedor-segundo-nombre">
+                        <label for="txt-segundo-nombre">Segundo Nombre</label>
+                        <input type="text" id="txt-segundo-nombre" name="segundo_nombre">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-apellido-paterno">Apellido Paterno</label>
+                        <input type="text" id="txt-apellido-paterno" name="apellido_paterno">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-apellido-materno">Apellido Materno</label>
+                        <input type="text" id="txt-apellido-materno" name="apellido_materno">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-fecha-nacimiento">Fecha Nacimiento</label>
+                        <input type="date" id="txt-fecha-nacimiento" name="fecha_nacimiento">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="select-sexo">Sexo</label>
+                        <select name="sexo" id="select-sexo">
+                            <option value="">Seleccione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="txt-correo-electronico">Correo electrónico</label>
+                        <input type="email" id="txt-correo-electronico" name="correo_electronico">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <label for="select-prevision">Previsión Salud</label>
+                        <select name="sexo" id="select-prevision">
+                            <option value="">Seleccione</option>
+                            <option value="fonasa">Fonasa</option>
+                            <option value="isapre">Isapre</option>
+                        </select>
+                    </div>
+                    <div class="col-12 centrar">
+                        <input type="submit" value="Registrar" id="btn-registrar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footerp1">
+        <div class="footer-copyright">
+            <div class="footer-copyright-content">
+                <span class="footer-copyright-text"> Copyright © 2024 Benjamin Marchant </span>
+                <div class="footer-copyright-links-wrap">
+                    <a class="footer-copyright-link" href="#">Términos y Condiciones</a>
+                    <span class="copyright-line"> | </span>
+                    <a class="footer-copyright-link" href="#">Seguridad y Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

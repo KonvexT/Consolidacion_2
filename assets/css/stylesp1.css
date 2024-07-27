@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    border: #CCC solid 1px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px #CCC solid;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+#btn-registrar {
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-top: 15px;
+}
+
+/* SM */
+@media screen and (min-width: 576px) {}
+
+/* MD */
+@media screen and (min-width: 768px) {
+    main section {
+        width: 80%;
+    }
+
+    /* #contenedor-segundo-nombre {
+        display: none;
+    } */
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+    main section {
+        width: 70%;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {}
+
+/* XXL */
+@media screen and (min-width: 1400px) {}

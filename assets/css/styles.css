@@ -90,7 +90,7 @@ footer {
 }
 
 textarea {
-    height: 150px !important;
+    height: 205px !important;
 }
 
 #p3,
@@ -114,7 +114,6 @@ textarea {
 #c1,
 #c2,
 #c3 {
-    
     height: 250px;
 } 
 
@@ -189,6 +188,9 @@ textarea {
     #habilidades {
         display: flex;
         justify-content: space-around;
+    }
+    section#contacto{
+        margin-top: -30px;
     }
 }
 
